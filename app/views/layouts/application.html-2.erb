@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Myblog</title>
+<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.3/css/bootstrap.min.css">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="container">
+  <%= yield %>
+</div>
+<footer>
+  <p class="text-center">
+    Copyright  2015 - Xi Dian Subved
+  </p>
+</footer>
+
+</body>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/blogs">Myblog</a></li>
+      <li><a href="#">Blogs</a></li>
+      <li><a href="#">Photos</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container page-header text-center">
+  <h1>Subved's Blog  <small>Happy everyday</small></h1>
+</div>
+</html>
